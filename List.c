@@ -100,4 +100,5 @@ main(){
     //delete=ListDelete(&L,1);
     printf("%d\n",delete);
     printf("%d",L.data[0]);
+    printf("github更改");
 }
