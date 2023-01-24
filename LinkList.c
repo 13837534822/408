@@ -1,14 +1,23 @@
 #include<stdio.h>
 #include <stdlib.h>
-typedef struct Node{
+#include <stdbool.h>
+typedef struct DNode{
     int data;
-    struct Node* next;
-}Node;
-
-int main(){
-    Node* head=(Node*)malloc(sizeof(Node));
-    head->data=-1;
+    struct DNode* next;
+}DNode;
+bool Init_DLinkList(DNode *head){
+    malloc(sizeof(DNode));
+    if(head==NULL){
+        return false;
+    }
+    head->data=0;
     head->next=NULL;
-    printf("Node-data: %d",head->data);
+    return true;
+}
+int main(){
+    DNode head;
+    Init_DLinkList(&head);
+    printf("Node-data: %d",head.data);
+    printf("%d",&head);
     return 0;
 }
