@@ -26,7 +26,7 @@ int Index_KMP(char s[],int slength,char t[],int tlength){
             i++;
             j++;
         }else{
-            j=next[j];  //根据next数组找到新的索引
+            j=next[j];  //根据next数组来找到新的索引
         }
     }
     if(j>tlength){
