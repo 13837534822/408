@@ -41,9 +41,6 @@ int main(){
     int str_lenght=12;
     int target_lenght=4;
     
-    // for(int i=1;i<5;i++){
-    //     printf("%d\n",next[i]);
-    // }
     printf("%d",Index_KMP(str,str_lenght,target,target_lenght));
     return 0;
 }
