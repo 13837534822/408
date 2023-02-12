@@ -9,7 +9,7 @@ typedef struct Arr_Node{
     bool isEmpty;
 }Arr_Node;
 
-//初始化二叉树的顺序储存
+//初始化二叉树的顺序储存结构
 void Init_ArrTree(Arr_Node t[]){
     
     for(int i=0;i<MaxSize;i++){
